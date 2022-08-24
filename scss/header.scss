@@ -1,0 +1,109 @@
+a {
+    text-decoration: none !important;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+body {
+    background-color: #811418 !important;
+    background-attachment: fixed !important;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+
+/*Header and Navbar*/
+
+header {
+    width: 100%;
+    .navbar {
+        background: #811418;
+        .nav-item {
+            margin-left: 25px;
+        }
+        ul li a {
+            font-family: "Segoe UI", Arial, sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 21px;
+            color: #FFFFFF;
+            transition: all .3s ease-in-out;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+        .right-col {
+            .social {
+                color: #ffffff;
+                border: 1.6336px solid #FFFFFF;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                &:first-child {
+                    margin-right: 20px;
+                }
+            }
+            .dropdown {
+                margin-left: 15px;
+                i {
+                    color: #ffffff;
+                    margin-left: 8px;
+                }
+                .az {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    font-family: 'Segoe UI';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 17px;
+                    line-height: 23px;
+                    color: #FFFFFF;
+                    text-transform: uppercase;
+                }
+                .rus {
+                    cursor: pointer;
+                    cursor: pointer;
+                    font-family: 'Segoe UI';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 17px;
+                    line-height: 23px;
+                    color: #FFFFFF;
+                    text-transform: uppercase;
+                }
+            }
+            .dropbtn {
+                cursor: pointer;
+                transition: all 0.35s ease-in-out !important;
+            }
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                margin-top: 6px;
+                transition: all 0.35s ease-in-out !important;
+            }
+            .dropdown-content.show,
+            .dropdown-content-2.show {
+                display: block;
+            }
+            .dropbtn.active,
+            .dropbtn-2.active {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

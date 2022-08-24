@@ -1,1 +1,149 @@
+a {
+  text-decoration: none !important;
+}
 
+p {
+  margin-bottom: 0 !important;
+}
+
+body {
+  background-color: #811418 !important;
+  background-attachment: fixed !important;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+/*Header and Navbar*/
+header {
+  width: 100%;
+}
+header .navbar {
+  background: #811418;
+}
+header .navbar .nav-item {
+  margin-left: 25px;
+}
+header .navbar ul li a {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  transition: all 0.3s ease-in-out;
+}
+header .navbar ul li a:hover {
+  opacity: 0.7;
+}
+header .navbar .right-col .social {
+  color: #ffffff;
+  border: 1.6336px solid #FFFFFF;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+header .navbar .right-col .social:first-child {
+  margin-right: 20px;
+}
+header .navbar .right-col .dropdown {
+  margin-left: 15px;
+}
+header .navbar .right-col .dropdown i {
+  color: #ffffff;
+  margin-left: 8px;
+}
+header .navbar .right-col .dropdown .az {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 23px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+header .navbar .right-col .dropdown .rus {
+  cursor: pointer;
+  cursor: pointer;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 23px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+header .navbar .right-col .dropbtn {
+  cursor: pointer;
+  transition: all 0.35s ease-in-out !important;
+}
+header .navbar .right-col .dropdown {
+  position: relative;
+  display: inline-block;
+}
+header .navbar .right-col .dropdown-content {
+  display: none;
+  position: absolute;
+  margin-top: 6px;
+  transition: all 0.35s ease-in-out !important;
+}
+header .navbar .right-col .dropdown-content.show,
+header .navbar .right-col .dropdown-content-2.show {
+  display: block;
+}
+header .navbar .right-col .dropbtn.active,
+header .navbar .right-col .dropbtn-2.active {
+  transform: rotate(180deg);
+}
+
+/*header-main*/
+main {
+  margin-top: 5rem;
+}
+main #header-text-img {
+  background-image: url(../img/Rectangle\ 9.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 688px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #header-text-img .header-text {
+  text-align: center;
+}
+main #header-text-img .header-text h1 {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 58px;
+  line-height: 120%;
+  text-align: center;
+  color: #FFFFFF;
+}
+main #header-text-img .header-text a {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+@media (max-width: 575.98px) {
+  main #header-text-img .header-text h1 {
+    font-size: 40px;
+  }
+}
