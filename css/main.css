@@ -143,6 +143,9 @@ main #header-text-img .header-text a {
 }
 
 @media (max-width: 575.98px) {
+  main #header-text-img {
+    height: 100vh;
+  }
   main #header-text-img .header-text h1 {
     font-size: 40px;
   }
