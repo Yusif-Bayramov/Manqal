@@ -116,5 +116,87 @@ main {
                 }
             }
         }
+        /*MODAL*/
+        .products-preview {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-height: 100vh;
+            width: 100%;
+            background: rgba(0, 0, 0, .8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+        }
+        .products-preview .preview {
+            width: 546.43px;
+            max-width: 100%;
+            height: 450px;
+            display: none;
+            padding: 2rem;
+            text-align: center;
+            background: #fff;
+            position: relative;
+            border-radius: 5px;
+            .products-card {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 100px;
+                flex-direction: column;
+            }
+            img {
+                width: 355.26px;
+                max-width: 100%;
+                height: 177.77px;
+                object-fit: contain;
+            }
+            .card-prices {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                h4 {
+                    font-family: 'Segoe UI';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 17.1783px;
+                    line-height: 23px;
+                    color: #000000;
+                }
+                h5 {
+                    font-family: 'Segoe UI';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 21.6198px;
+                    line-height: 29px;
+                    display: flex;
+                    align-items: flex-end;
+                    color: #8F161A;
+                }
+            }
+            p {
+                width: 70%;
+                font-family: 'Segoe UI';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 11.8421px;
+                line-height: 16px;
+                text-align: left;
+                color: #000000;
+            }
+        }
+        .products-preview .preview.active {
+            display: inline-block;
+        }
+        .products-preview .preview .fa-times {
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            cursor: pointer;
+            color: rgb(0, 0, 0);
+            font-size: 1.5rem;
+        }
     }
 }
