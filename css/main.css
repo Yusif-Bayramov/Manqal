@@ -13,6 +13,7 @@ body {
 
 * {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 /*Header and Navbar*/
@@ -110,6 +111,8 @@ header .navbar .right-col .dropbtn-2.active {
 /*header-main*/
 main {
   margin-top: 5rem;
+  /*S1*/
+  /*S2*/
 }
 main #header-text-img {
   background-image: url(../img/Rectangle\ 9.png);
@@ -143,7 +146,94 @@ main #header-text-img .header-text a {
   text-align: center;
   color: #FFFFFF;
 }
+main #menyu {
+  width: 100%;
+  height: 706px;
+  background-color: #FFFFFF;
+  margin: 50px 0;
+  padding: 0 15px;
+}
+main #menyu .menyu-head {
+  text-align: center;
+  padding: 50px 0;
+}
+main #menyu .menyu-head h1 {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 33.4025px;
+  line-height: 131.1%;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+main #menyu .menyu-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+main #menyu .menyu-container .menu-item {
+  width: 429px;
+  height: 223px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+main #menyu .menyu-container .menu-item:hover {
+  border: 2px solid #811418;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: scale(1.05);
+}
+main #menyu .menyu-container .menu-item .menyu-img {
+  flex-basis: 50%;
+}
+main #menyu .menyu-container .menu-item .menyu-img img {
+  width: 100%;
+  height: auto;
+}
+main #menyu .menyu-container .menu-item .menyu-text {
+  flex-basis: 50%;
+}
+main #menyu .menyu-container .menu-item .menyu-text h4 {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17.1783px;
+  line-height: 23px;
+  color: #000000;
+}
+main #menyu .menyu-container .menu-item .menyu-text h5 {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21.6198px;
+  line-height: 29px;
+  display: flex;
+  align-items: flex-end;
+  color: #8F161A;
+}
+main #menyu .menyu-container .menu-item .menyu-text p {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11.4522px;
+  line-height: 143.5%;
+  color: #000000;
+}
 
+@media (max-width: 1420px) {
+  main #menyu {
+    height: auto;
+    padding-bottom: 15px;
+  }
+}
 @media (max-width: 575.98px) {
   main #header-text-img .header-text h1 {
     font-size: 40px;
