@@ -55,59 +55,6 @@ header {
                     margin-right: 20px;
                 }
             }
-            .dropdown {
-                margin-left: 15px;
-                i {
-                    color: #ffffff;
-                    margin-left: 8px;
-                }
-                .az {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    cursor: pointer;
-                    font-family: 'Segoe UI';
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 17px;
-                    line-height: 23px;
-                    color: #FFFFFF;
-                    text-transform: uppercase;
-                }
-                .rus {
-                    cursor: pointer;
-                    cursor: pointer;
-                    font-family: 'Segoe UI';
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 17px;
-                    line-height: 23px;
-                    color: #FFFFFF;
-                    text-transform: uppercase;
-                }
-            }
-            .dropbtn {
-                cursor: pointer;
-                transition: all 0.35s ease-in-out !important;
-            }
-            .dropdown {
-                position: relative;
-                display: inline-block;
-            }
-            .dropdown-content {
-                display: none;
-                position: absolute;
-                margin-top: 6px;
-                transition: all 0.35s ease-in-out !important;
-            }
-            .dropdown-content.show,
-            .dropdown-content-2.show {
-                display: block;
-            }
-            .dropbtn.active,
-            .dropbtn-2.active {
-                transform: rotate(180deg);
-            }
         }
     }
 }

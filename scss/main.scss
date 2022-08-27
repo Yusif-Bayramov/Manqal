@@ -35,7 +35,7 @@ main {
             }
         }
     }
-    /*S2*/
+    /*menyu*/
     #menyu {
         width: 100%;
         height: 706px;
@@ -197,6 +197,70 @@ main {
             cursor: pointer;
             color: rgb(0, 0, 0);
             font-size: 1.5rem;
+        }
+    }
+    /*video*/
+    #vidoe {
+        width: 100%;
+        margin-bottom: 50px;
+        .video-bg {
+            width: 100%;
+            position: relative;
+            .img1 {
+                width: 100%;
+                height: 600px;
+                object-fit: cover;
+                position: relative;
+            }
+            .img2 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                max-width: 100%;
+                width: 78px;
+                height: 78px;
+                object-fit: cover;
+                cursor: pointer;
+            }
+            .vidoe-container {
+                display: none;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 9999;
+                width: 100%;
+                height: 100vh;
+                background-color: #0000009a;
+            }
+            .video-player {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 90%;
+                object-fit: cover;
+                i {
+                    font-size: 20px;
+                    color: #fff;
+                    padding: 10px;
+                    display: flex;
+                    justify-content: flex-end;
+                    cursor: pointer;
+                }
+                video {
+                    width: 100%;
+                    height: 650px;
+                    object-fit: cover;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+            .vidoe-container.active {
+                display: block;
+            }
         }
     }
 }

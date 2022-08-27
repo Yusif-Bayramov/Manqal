@@ -54,65 +54,13 @@ header .navbar .right-col .social {
 header .navbar .right-col .social:first-child {
   margin-right: 20px;
 }
-header .navbar .right-col .dropdown {
-  margin-left: 15px;
-}
-header .navbar .right-col .dropdown i {
-  color: #ffffff;
-  margin-left: 8px;
-}
-header .navbar .right-col .dropdown .az {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-family: "Segoe UI";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 23px;
-  color: #FFFFFF;
-  text-transform: uppercase;
-}
-header .navbar .right-col .dropdown .rus {
-  cursor: pointer;
-  cursor: pointer;
-  font-family: "Segoe UI";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 23px;
-  color: #FFFFFF;
-  text-transform: uppercase;
-}
-header .navbar .right-col .dropbtn {
-  cursor: pointer;
-  transition: all 0.35s ease-in-out !important;
-}
-header .navbar .right-col .dropdown {
-  position: relative;
-  display: inline-block;
-}
-header .navbar .right-col .dropdown-content {
-  display: none;
-  position: absolute;
-  margin-top: 6px;
-  transition: all 0.35s ease-in-out !important;
-}
-header .navbar .right-col .dropdown-content.show,
-header .navbar .right-col .dropdown-content-2.show {
-  display: block;
-}
-header .navbar .right-col .dropbtn.active,
-header .navbar .right-col .dropbtn-2.active {
-  transform: rotate(180deg);
-}
 
 /*header-main*/
 main {
   margin-top: 5rem;
   /*S1*/
-  /*S2*/
+  /*menyu*/
+  /*video*/
 }
 main #header-text-img {
   background-image: url(../img/Rectangle\ 9.png);
@@ -309,11 +257,82 @@ main #menyu .products-preview .preview .fa-times {
   color: rgb(0, 0, 0);
   font-size: 1.5rem;
 }
+main #vidoe {
+  width: 100%;
+  margin-bottom: 50px;
+}
+main #vidoe .video-bg {
+  width: 100%;
+  position: relative;
+}
+main #vidoe .video-bg .img1 {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  position: relative;
+}
+main #vidoe .video-bg .img2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 78px;
+  height: 78px;
+  object-fit: cover;
+  cursor: pointer;
+}
+main #vidoe .video-bg .vidoe-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6039215686);
+}
+main #vidoe .video-bg .video-player {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  object-fit: cover;
+}
+main #vidoe .video-bg .video-player i {
+  font-size: 20px;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+main #vidoe .video-bg .video-player video {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+}
+main #vidoe .video-bg .video-player video:focus {
+  outline: none;
+}
+main #vidoe .video-bg .vidoe-container.active {
+  display: block;
+}
 
 @media (max-width: 1420px) {
   main #menyu {
     height: auto;
     padding-bottom: 15px;
+  }
+}
+@media (max-width: 1110px) {
+  main #vidoe .video-bg .img1 {
+    height: 50%;
+  }
+  main #vidoe .video-bg .video-player video {
+    height: 500px;
   }
 }
 @media (max-width: 575.98px) {

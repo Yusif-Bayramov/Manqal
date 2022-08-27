@@ -7,6 +7,23 @@
     }
 }
 
+@media (max-width: 1110px) {
+    main {
+        #vidoe {
+            .video-bg {
+                .img1 {
+                    height: 50%;
+                }
+                .video-player {
+                    video {
+                        height: 500px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 575.98px) {
     main {
         #header-text-img {

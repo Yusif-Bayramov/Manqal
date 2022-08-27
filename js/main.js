@@ -1,11 +1,3 @@
-let dropdown = document.querySelector(".dropbtn");
-let mydropdown = document.querySelector(".dropdown-content");
-
-dropdown.addEventListener("click", () => {
-    mydropdown.classList.toggle("show")
-    dropdown.classList.toggle("active")
-});
-
 let preveiwContainer = document.querySelector('.products-preview');
 let previewBox = preveiwContainer.querySelectorAll('.preview');
 
@@ -19,7 +11,9 @@ document.querySelectorAll('.menu-item').forEach(product => {
                 preview.classList.add('active');
             }
         });
+
     };
+
 });
 
 previewBox.forEach(close => {
@@ -28,3 +22,32 @@ previewBox.forEach(close => {
         preveiwContainer.style.display = 'none';
     };
 });
+window.onclick = function(event) {
+    let preveiwContainer = document.querySelector('.products-preview');
+    if (event.target == preveiwContainer) {
+        previewBox.forEach(close => {
+            close.classList.remove('active');
+            preveiwContainer.style.display = 'none';
+
+        });
+    }
+}
+
+const vidoePlayBtn = document.querySelector(".img2")
+const video = document.querySelector(".vidoe-container");
+const closevideo = document.querySelector(".closevideo");
+
+vidoePlayBtn.addEventListener("click", () => {
+    video.classList.add("active");
+})
+
+closevideo.addEventListener("click", () => {
+    video.classList.remove("active");
+})
+
+window.onclick = function(event) {
+
+    if (event.target == video) {
+        video.classList.remove("active");
+    }
+}
