@@ -128,6 +128,7 @@ main {
             align-items: center;
             justify-content: center;
             padding: 15px;
+            z-index: 1;
         }
         .products-preview .preview {
             width: 546.43px;
@@ -250,12 +251,16 @@ main {
                     cursor: pointer;
                 }
                 video {
+                    display: none;
                     width: 100%;
                     height: 650px;
                     object-fit: cover;
                     &:focus {
                         outline: none;
                     }
+                }
+                video.active {
+                    display: block;
                 }
             }
             .vidoe-container.active {

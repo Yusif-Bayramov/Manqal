@@ -187,6 +187,7 @@ main #menyu .products-preview {
   align-items: center;
   justify-content: center;
   padding: 15px;
+  z-index: 1;
 }
 main #menyu .products-preview .preview {
   width: 546.43px;
@@ -310,12 +311,16 @@ main #vidoe .video-bg .video-player i {
   cursor: pointer;
 }
 main #vidoe .video-bg .video-player video {
+  display: none;
   width: 100%;
   height: 650px;
   object-fit: cover;
 }
 main #vidoe .video-bg .video-player video:focus {
   outline: none;
+}
+main #vidoe .video-bg .video-player video.active {
+  display: block;
 }
 main #vidoe .video-bg .vidoe-container.active {
   display: block;
