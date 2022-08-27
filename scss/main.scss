@@ -251,16 +251,14 @@ main {
                     cursor: pointer;
                 }
                 video {
-                    display: none;
                     width: 100%;
                     height: 650px;
                     object-fit: cover;
+                    border-radius: 10px;
+                    border: none;
                     &:focus {
                         outline: none;
                     }
-                }
-                video.active {
-                    display: block;
                 }
             }
             .vidoe-container.active {

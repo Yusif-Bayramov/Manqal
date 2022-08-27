@@ -311,16 +311,14 @@ main #vidoe .video-bg .video-player i {
   cursor: pointer;
 }
 main #vidoe .video-bg .video-player video {
-  display: none;
   width: 100%;
   height: 650px;
   object-fit: cover;
+  border-radius: 10px;
+  border: none;
 }
 main #vidoe .video-bg .video-player video:focus {
   outline: none;
-}
-main #vidoe .video-bg .video-player video.active {
-  display: block;
 }
 main #vidoe .video-bg .vidoe-container.active {
   display: block;
