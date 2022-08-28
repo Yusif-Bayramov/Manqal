@@ -12,12 +12,30 @@
         #vidoe {
             .video-bg {
                 .img1 {
-                    height: 50%;
+                    height: 60%;
                 }
                 .video-player {
                     video {
                         height: 500px;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1188px) {
+    main {
+        #about {
+            .about-container {
+                flex-direction: column;
+                .about-text {
+                    flex-basis: 100%;
+                    margin-right: 0;
+                }
+                .about-img {
+                    flex-basis: 100%;
+                    flex-direction: column;
                 }
             }
         }
