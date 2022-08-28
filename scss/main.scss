@@ -268,8 +268,7 @@ main {
     }
     #about {
         width: 100%;
-        margin-bottom: 50px;
-        padding: 85px 0;
+        padding: 65px 0;
         background-color: #ffff;
         .about-container {
             width: 100%;
@@ -314,8 +313,70 @@ main {
                     max-width: 100%;
                     height: 467.44px;
                     object-fit: cover;
-                    border-radius: 16.4426px;
                 }
+            }
+        }
+    }
+    #elaqe {
+        padding: 65px 0;
+        .elaqe-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            .map {
+                iframe {
+                    max-width: 100%;
+                }
+            }
+            h1 {
+                font-family: 'Segoe UI';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 35px;
+                line-height: 47px;
+                /* identical to box height */
+                color: #FFFFFF;
+                margin-bottom: 35px;
+            }
+            form {
+                input {
+                    background: none;
+                    border: none;
+                    border-bottom: 1px solid #fff;
+                    margin-bottom: 65px;
+                    color: #ffff;
+                    &:first-child {
+                        margin-right: 45px;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                    &::placeholder {
+                        font-family: 'Segoe UI';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 16.9439px;
+                        line-height: 83%;
+                        /* or 14px */
+                        color: #FFFFFF;
+                    }
+                }
+                .form-btn {
+                    background-color: #fff;
+                    border: none;
+                    width: 180px;
+                    height: 41.67px;
+                    text-align: center;
+                    border-radius: 3.33333px;
+                    transition: all .3s ease-in-out;
+                    &:hover {
+                        opacity: .8;
+                    }
+                }
+            }
+            .input-bottom {
+                width: 100%;
             }
         }
     }

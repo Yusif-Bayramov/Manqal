@@ -1,55 +1,84 @@
-@media (max-width: 1420px) {
-    main {
-        #menyu {
-            height: auto;
-            padding-bottom: 15px;
-        }
-    }
-}
-
-@media (max-width: 1110px) {
-    main {
-        #vidoe {
-            .video-bg {
-                .img1 {
-                    height: 60%;
-                }
-                .video-player {
-                    video {
-                        height: 500px;
+            @media (max-width: 1420px) {
+                main {
+                    #menyu {
+                        height: auto;
+                        padding-bottom: 15px;
                     }
                 }
             }
-        }
-    }
-}
-
-@media (max-width: 1188px) {
-    main {
-        #about {
-            .about-container {
-                flex-direction: column;
-                .about-text {
-                    flex-basis: 100%;
-                    margin-right: 0;
-                }
-                .about-img {
-                    flex-basis: 100%;
-                    flex-direction: column;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 575.98px) {
-    main {
-        #header-text-img {
-            .header-text {
-                h1 {
-                    font-size: 40px;
+            
+            @media (max-width: 1188px) {
+                main {
+                    #about {
+                        .about-container {
+                            flex-direction: column;
+                            .about-text {
+                                flex-basis: 100%;
+                                margin-right: 0;
+                            }
+                            .about-img {
+                                flex-basis: 100%;
+                                flex-direction: column;
+                            }
+                        }
+                    }
                 }
             }
-        }
-    }
-}
+            
+            @media (max-width: 1110px) {
+                main {
+                    #vidoe {
+                        .video-bg {
+                            .img1 {
+                                height: 60%;
+                            }
+                            .video-player {
+                                video {
+                                    height: 500px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            @media (max-width: 991px) {
+                main {
+                    #elaqe {
+                        .elaqe-container {
+                            .map {
+                                margin-bottom: 35px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            @media (max-width: 575.98px) {
+                main {
+                    #header-text-img {
+                        .header-text {
+                            h1 {
+                                font-size: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            @media (max-width: 450px) {
+                main {
+                    #elaqe {
+                        .elaqe-container {
+                            form {
+                                input {
+                                    width: 100%;
+                                    &:first-child {
+                                        margin-right: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }

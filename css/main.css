@@ -325,8 +325,7 @@ main #vidoe .video-bg .vidoe-container.active {
 }
 main #about {
   width: 100%;
-  margin-bottom: 50px;
-  padding: 85px 0;
+  padding: 65px 0;
   background-color: white;
 }
 main #about .about-container {
@@ -374,21 +373,71 @@ main #about .about-container .about-img img {
   max-width: 100%;
   height: 467.44px;
   object-fit: cover;
-  border-radius: 16.4426px;
+}
+main #elaqe {
+  padding: 65px 0;
+}
+main #elaqe .elaqe-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main #elaqe .elaqe-container .map iframe {
+  max-width: 100%;
+}
+main #elaqe .elaqe-container h1 {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 47px;
+  /* identical to box height */
+  color: #FFFFFF;
+  margin-bottom: 35px;
+}
+main #elaqe .elaqe-container form input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 65px;
+  color: white;
+}
+main #elaqe .elaqe-container form input:first-child {
+  margin-right: 45px;
+}
+main #elaqe .elaqe-container form input:focus {
+  outline: none;
+}
+main #elaqe .elaqe-container form input::placeholder {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16.9439px;
+  line-height: 83%;
+  /* or 14px */
+  color: #FFFFFF;
+}
+main #elaqe .elaqe-container form .form-btn {
+  background-color: #fff;
+  border: none;
+  width: 180px;
+  height: 41.67px;
+  text-align: center;
+  border-radius: 3.33333px;
+  transition: all 0.3s ease-in-out;
+}
+main #elaqe .elaqe-container form .form-btn:hover {
+  opacity: 0.8;
+}
+main #elaqe .elaqe-container .input-bottom {
+  width: 100%;
 }
 
 @media (max-width: 1420px) {
   main #menyu {
     height: auto;
     padding-bottom: 15px;
-  }
-}
-@media (max-width: 1110px) {
-  main #vidoe .video-bg .img1 {
-    height: 60%;
-  }
-  main #vidoe .video-bg .video-player video {
-    height: 500px;
   }
 }
 @media (max-width: 1188px) {
@@ -404,8 +453,29 @@ main #about .about-container .about-img img {
     flex-direction: column;
   }
 }
+@media (max-width: 1110px) {
+  main #vidoe .video-bg .img1 {
+    height: 60%;
+  }
+  main #vidoe .video-bg .video-player video {
+    height: 500px;
+  }
+}
+@media (max-width: 991px) {
+  main #elaqe .elaqe-container .map {
+    margin-bottom: 35px;
+  }
+}
 @media (max-width: 575.98px) {
   main #header-text-img .header-text h1 {
     font-size: 40px;
+  }
+}
+@media (max-width: 450px) {
+  main #elaqe .elaqe-container form input {
+    width: 100%;
+  }
+  main #elaqe .elaqe-container form input:first-child {
+    margin-right: 0;
   }
 }
