@@ -40,21 +40,22 @@ header {
                 opacity: 0.7;
             }
         }
-        .right-col {
-            .social {
-                color: #ffffff;
-                border: 1.6336px solid #FFFFFF;
-                border-radius: 50%;
-                width: 40px;
-                height: 40px;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: row;
-                &:first-child {
-                    margin-right: 20px;
-                }
-            }
+    }
+}
+
+.right-col {
+    .social {
+        color: #ffffff;
+        border: 1.6336px solid #FFFFFF;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        &:first-child {
+            margin-right: 20px;
         }
     }
 }

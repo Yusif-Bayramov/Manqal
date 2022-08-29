@@ -54,6 +54,14 @@
                 }
             }
             
+            @media (max-width: 760px) {
+                footer {
+                    .kecid {
+                        margin-top: 15px;
+                    }
+                }
+            }
+            
             @media (max-width: 575.98px) {
                 main {
                     #header-text-img {
@@ -62,6 +70,18 @@
                                 font-size: 40px;
                             }
                         }
+                    }
+                }
+                footer {
+                    .copy {
+                        gap: 10px;
+                        justify-content: center;
+                    }
+                    .elaqe-link {
+                        margin: 15px 0;
+                    }
+                    .kecid {
+                        margin-top: 15px;
                     }
                 }
             }
